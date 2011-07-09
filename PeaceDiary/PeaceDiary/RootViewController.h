@@ -13,4 +13,7 @@
 }
 
 
+- (void) setDiaryPwd:(id)sender;
+
+- (void) dismissPwd:(id)sender;
 @end

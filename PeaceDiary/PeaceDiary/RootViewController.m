@@ -10,6 +10,9 @@
 #import "WriteDiaryViewController.h"
 #import "DiaryModel.h"
 #import "DiaryListViewController.h"
+#import "UITool.h"
+
+#import "SFHFKeychainUtils.h"
 
 @implementation RootViewController
 
@@ -17,6 +20,20 @@
 {
     [super viewDidLoad];
     self.title = @"PeaceDiary";
+    
+    NSError* error = nil;
+    NSString* username = @"haspassword";
+    
+    NSString* pwd = [SFHFKeychainUtils  getPasswordForUsername:username andServiceName:@"diary" error:&error];
+    if([pwd length]<=0)
+    {    
+        self.navigationItem.leftBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"SetPwd" style:UIBarButtonItemStylePlain target:self action:@selector(setDiaryPwd:)] autorelease];
+    }
+    else
+    {
+            self.navigationItem.leftBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"RemovePwd" style:UIBarButtonItemStylePlain target:self action:@selector(dismissPwd:)] autorelease];
+    }
+
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -167,6 +184,16 @@
 - (void)dealloc
 {
     [super dealloc];
+}
+
+- (void) setDiaryPwd:(id)sender;
+{
+    [UITool showAlertWithTitle:@"Alert" withMsg:@"Need setup a pwd" WithDelegate:nil];
+}
+
+- (void) dismissPwd:(id)sender
+{
+    [UITool showAlertWithTitle:@"Alert" withMsg:@"Need  remove pwd" WithDelegate:nil];
 }
 
 @end
