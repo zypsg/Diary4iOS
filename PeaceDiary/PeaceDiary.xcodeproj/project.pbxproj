@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C39FF78D13C84F9900561EDD /* DiaryReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C39FF78C13C84F9900561EDD /* DiaryReadViewController.m */; };
+		C3D55D1213C7FC540032F53E /* WriteDiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D55D1113C7FC540032F53E /* WriteDiaryViewController.m */; };
+		C3D55D1413C802D00032F53E /* WriteDiaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3D55D1313C802D00032F53E /* WriteDiaryViewController.xib */; };
+		C3D55D1713C811740032F53E /* UITool.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D55D1613C811740032F53E /* UITool.m */; };
+		C3D55D1B13C820A20032F53E /* FileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D55D1A13C820A20032F53E /* FileTool.m */; };
+		C3D55D2613C821240032F53E /* SqliteDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D55D2513C821240032F53E /* SqliteDataBase.m */; };
+		C3D55D2913C825A70032F53E /* DateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D55D2813C825A70032F53E /* DateTool.m */; };
+		C3D55D2B13C82D7B0032F53E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D55D2A13C82D7B0032F53E /* libsqlite3.dylib */; };
+		C3D55D2E13C838B20032F53E /* DiaryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D55D2D13C838B10032F53E /* DiaryListViewController.m */; };
+		C3DA75CD13C7E8ED00EEA31A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DA75CC13C7E8ED00EEA31A /* UIKit.framework */; };
+		C3DA75CF13C7E8ED00EEA31A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DA75CE13C7E8ED00EEA31A /* Foundation.framework */; };
+		C3DA75D113C7E8ED00EEA31A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DA75D013C7E8ED00EEA31A /* CoreGraphics.framework */; };
+		C3DA75D713C7E8ED00EEA31A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3DA75D513C7E8ED00EEA31A /* InfoPlist.strings */; };
+		C3DA75DA13C7E8ED00EEA31A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DA75D913C7E8ED00EEA31A /* main.m */; };
+		C3DA75DD13C7E8ED00EEA31A /* PeaceDiaryAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DA75DC13C7E8ED00EEA31A /* PeaceDiaryAppDelegate.m */; };
+		C3DA75E013C7E8ED00EEA31A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3DA75DE13C7E8ED00EEA31A /* MainWindow.xib */; };
+		C3DA75E313C7E8ED00EEA31A /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DA75E213C7E8ED00EEA31A /* RootViewController.m */; };
+		C3DA75E613C7E8ED00EEA31A /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3DA75E413C7E8ED00EEA31A /* RootViewController.xib */; };
+		C3DA75F413C7EE6300EEA31A /* DiaryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DA75F313C7EE6300EEA31A /* DiaryModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C39FF78B13C84F9900561EDD /* DiaryReadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiaryReadViewController.h; path = viewcontroller/DiaryReadViewController.h; sourceTree = "<group>"; };
+		C39FF78C13C84F9900561EDD /* DiaryReadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiaryReadViewController.m; path = viewcontroller/DiaryReadViewController.m; sourceTree = "<group>"; };
+		C3D55D1013C7FC540032F53E /* WriteDiaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WriteDiaryViewController.h; path = viewcontroller/WriteDiaryViewController.h; sourceTree = "<group>"; };
+		C3D55D1113C7FC540032F53E /* WriteDiaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WriteDiaryViewController.m; path = viewcontroller/WriteDiaryViewController.m; sourceTree = "<group>"; };
+		C3D55D1313C802D00032F53E /* WriteDiaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WriteDiaryViewController.xib; path = viewcontroller/WriteDiaryViewController.xib; sourceTree = "<group>"; };
+		C3D55D1513C811740032F53E /* UITool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UITool.h; path = util/UITool.h; sourceTree = "<group>"; };
+		C3D55D1613C811740032F53E /* UITool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UITool.m; path = util/UITool.m; sourceTree = "<group>"; };
+		C3D55D1913C820A20032F53E /* FileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileTool.h; path = util/FileTool.h; sourceTree = "<group>"; };
+		C3D55D1A13C820A20032F53E /* FileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileTool.m; path = util/FileTool.m; sourceTree = "<group>"; };
+		C3D55D2413C821240032F53E /* SqliteDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SqliteDataBase.h; path = databse/SqliteDataBase.h; sourceTree = "<group>"; };
+		C3D55D2513C821240032F53E /* SqliteDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SqliteDataBase.m; path = databse/SqliteDataBase.m; sourceTree = "<group>"; };
+		C3D55D2713C825A70032F53E /* DateTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DateTool.h; path = util/DateTool.h; sourceTree = "<group>"; };
+		C3D55D2813C825A70032F53E /* DateTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DateTool.m; path = util/DateTool.m; sourceTree = "<group>"; };
+		C3D55D2A13C82D7B0032F53E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		C3D55D2C13C838AE0032F53E /* DiaryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiaryListViewController.h; path = viewcontroller/DiaryListViewController.h; sourceTree = "<group>"; };
+		C3D55D2D13C838B10032F53E /* DiaryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiaryListViewController.m; path = viewcontroller/DiaryListViewController.m; sourceTree = "<group>"; };
+		C3DA75C813C7E8ED00EEA31A /* PeaceDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeaceDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3DA75CC13C7E8ED00EEA31A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C3DA75CE13C7E8ED00EEA31A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C3DA75D013C7E8ED00EEA31A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C3DA75D413C7E8ED00EEA31A /* PeaceDiary-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PeaceDiary-Info.plist"; sourceTree = "<group>"; };
+		C3DA75D613C7E8ED00EEA31A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C3DA75D813C7E8ED00EEA31A /* PeaceDiary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PeaceDiary-Prefix.pch"; sourceTree = "<group>"; };
+		C3DA75D913C7E8ED00EEA31A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3DA75DB13C7E8ED00EEA31A /* PeaceDiaryAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeaceDiaryAppDelegate.h; sourceTree = "<group>"; };
+		C3DA75DC13C7E8ED00EEA31A /* PeaceDiaryAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeaceDiaryAppDelegate.m; sourceTree = "<group>"; };
+		C3DA75DF13C7E8ED00EEA31A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		C3DA75E113C7E8ED00EEA31A /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		C3DA75E213C7E8ED00EEA31A /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		C3DA75E513C7E8ED00EEA31A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		C3DA75F213C7EE6300EEA31A /* DiaryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiaryModel.h; path = model/DiaryModel.h; sourceTree = "<group>"; };
+		C3DA75F313C7EE6300EEA31A /* DiaryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiaryModel.m; path = model/DiaryModel.m; sourceTree = "<group>"; };
+		C3DA75F513C7EF8D00EEA31A /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = util/Constants.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3DA75C513C7E8ED00EEA31A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3D55D2B13C82D7B0032F53E /* libsqlite3.dylib in Frameworks */,
+				C3DA75CD13C7E8ED00EEA31A /* UIKit.framework in Frameworks */,
+				C3DA75CF13C7E8ED00EEA31A /* Foundation.framework in Frameworks */,
+				C3DA75D113C7E8ED00EEA31A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3D55D1813C8207A0032F53E /* database */ = {
+			isa = PBXGroup;
+			children = (
+				C3D55D2413C821240032F53E /* SqliteDataBase.h */,
+				C3D55D2513C821240032F53E /* SqliteDataBase.m */,
+			);
+			name = database;
+			sourceTree = "<group>";
+		};
+		C3DA75BD13C7E8ED00EEA31A = {
+			isa = PBXGroup;
+			children = (
+				C3DA75D213C7E8ED00EEA31A /* PeaceDiary */,
+				C3DA75CB13C7E8ED00EEA31A /* Frameworks */,
+				C3DA75C913C7E8ED00EEA31A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3DA75C913C7E8ED00EEA31A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3DA75C813C7E8ED00EEA31A /* PeaceDiary.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3DA75CB13C7E8ED00EEA31A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3D55D2A13C82D7B0032F53E /* libsqlite3.dylib */,
+				C3DA75CC13C7E8ED00EEA31A /* UIKit.framework */,
+				C3DA75CE13C7E8ED00EEA31A /* Foundation.framework */,
+				C3DA75D013C7E8ED00EEA31A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3DA75D213C7E8ED00EEA31A /* PeaceDiary */ = {
+			isa = PBXGroup;
+			children = (
+				C3D55D1813C8207A0032F53E /* database */,
+				C3DA75F113C7EE3300EEA31A /* util */,
+				C3DA75EF13C7EA9800EEA31A /* network */,
+				C3DA75EE13C7EA8D00EEA31A /* view */,
+				C3DA75ED13C7E9BD00EEA31A /* viewcontroller */,
+				C3DA75EC13C7E9AA00EEA31A /* model */,
+				C3DA75DB13C7E8ED00EEA31A /* PeaceDiaryAppDelegate.h */,
+				C3DA75DC13C7E8ED00EEA31A /* PeaceDiaryAppDelegate.m */,
+				C3DA75DE13C7E8ED00EEA31A /* MainWindow.xib */,
+				C3DA75E113C7E8ED00EEA31A /* RootViewController.h */,
+				C3DA75E213C7E8ED00EEA31A /* RootViewController.m */,
+				C3DA75E413C7E8ED00EEA31A /* RootViewController.xib */,
+				C3DA75D313C7E8ED00EEA31A /* Supporting Files */,
+			);
+			path = PeaceDiary;
+			sourceTree = "<group>";
+		};
+		C3DA75D313C7E8ED00EEA31A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3DA75D413C7E8ED00EEA31A /* PeaceDiary-Info.plist */,
+				C3DA75D513C7E8ED00EEA31A /* InfoPlist.strings */,
+				C3DA75D813C7E8ED00EEA31A /* PeaceDiary-Prefix.pch */,
+				C3DA75D913C7E8ED00EEA31A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3DA75EC13C7E9AA00EEA31A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				C3DA75F213C7EE6300EEA31A /* DiaryModel.h */,
+				C3DA75F313C7EE6300EEA31A /* DiaryModel.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		C3DA75ED13C7E9BD00EEA31A /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				C3D55D1013C7FC540032F53E /* WriteDiaryViewController.h */,
+				C3D55D1113C7FC540032F53E /* WriteDiaryViewController.m */,
+				C3D55D1313C802D00032F53E /* WriteDiaryViewController.xib */,
+				C3D55D2C13C838AE0032F53E /* DiaryListViewController.h */,
+				C3D55D2D13C838B10032F53E /* DiaryListViewController.m */,
+				C39FF78B13C84F9900561EDD /* DiaryReadViewController.h */,
+				C39FF78C13C84F9900561EDD /* DiaryReadViewController.m */,
+			);
+			name = viewcontroller;
+			sourceTree = "<group>";
+		};
+		C3DA75EE13C7EA8D00EEA31A /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		C3DA75EF13C7EA9800EEA31A /* network */ = {
+			isa = PBXGroup;
+			children = (
+				C3DA75F013C7EAA500EEA31A /* http */,
+			);
+			name = network;
+			sourceTree = "<group>";
+		};
+		C3DA75F013C7EAA500EEA31A /* http */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = http;
+			sourceTree = "<group>";
+		};
+		C3DA75F113C7EE3300EEA31A /* util */ = {
+			isa = PBXGroup;
+			children = (
+				C3DA75F513C7EF8D00EEA31A /* Constants.h */,
+				C3D55D1513C811740032F53E /* UITool.h */,
+				C3D55D1613C811740032F53E /* UITool.m */,
+				C3D55D1913C820A20032F53E /* FileTool.h */,
+				C3D55D1A13C820A20032F53E /* FileTool.m */,
+				C3D55D2713C825A70032F53E /* DateTool.h */,
+				C3D55D2813C825A70032F53E /* DateTool.m */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3DA75C713C7E8ED00EEA31A /* PeaceDiary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3DA75E913C7E8ED00EEA31A /* Build configuration list for PBXNativeTarget "PeaceDiary" */;
+			buildPhases = (
+				C3DA75C413C7E8ED00EEA31A /* Sources */,
+				C3DA75C513C7E8ED00EEA31A /* Frameworks */,
+				C3DA75C613C7E8ED00EEA31A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PeaceDiary;
+			productName = PeaceDiary;
+			productReference = C3DA75C813C7E8ED00EEA31A /* PeaceDiary.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3DA75BF13C7E8ED00EEA31A /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C3DA75C213C7E8ED00EEA31A /* Build configuration list for PBXProject "PeaceDiary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C3DA75BD13C7E8ED00EEA31A;
+			productRefGroup = C3DA75C913C7E8ED00EEA31A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3DA75C713C7E8ED00EEA31A /* PeaceDiary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3DA75C613C7E8ED00EEA31A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3DA75D713C7E8ED00EEA31A /* InfoPlist.strings in Resources */,
+				C3DA75E013C7E8ED00EEA31A /* MainWindow.xib in Resources */,
+				C3DA75E613C7E8ED00EEA31A /* RootViewController.xib in Resources */,
+				C3D55D1413C802D00032F53E /* WriteDiaryViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3DA75C413C7E8ED00EEA31A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3DA75DA13C7E8ED00EEA31A /* main.m in Sources */,
+				C3DA75DD13C7E8ED00EEA31A /* PeaceDiaryAppDelegate.m in Sources */,
+				C3DA75E313C7E8ED00EEA31A /* RootViewController.m in Sources */,
+				C3DA75F413C7EE6300EEA31A /* DiaryModel.m in Sources */,
+				C3D55D1213C7FC540032F53E /* WriteDiaryViewController.m in Sources */,
+				C3D55D1713C811740032F53E /* UITool.m in Sources */,
+				C3D55D1B13C820A20032F53E /* FileTool.m in Sources */,
+				C3D55D2613C821240032F53E /* SqliteDataBase.m in Sources */,
+				C3D55D2913C825A70032F53E /* DateTool.m in Sources */,
+				C3D55D2E13C838B20032F53E /* DiaryListViewController.m in Sources */,
+				C39FF78D13C84F9900561EDD /* DiaryReadViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C3DA75D513C7E8ED00EEA31A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3DA75D613C7E8ED00EEA31A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C3DA75DE13C7E8ED00EEA31A /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3DA75DF13C7E8ED00EEA31A /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		C3DA75E413C7E8ED00EEA31A /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3DA75E513C7E8ED00EEA31A /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3DA75E713C7E8ED00EEA31A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C3DA75E813C7E8ED00EEA31A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		C3DA75EA13C7E8ED00EEA31A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PeaceDiary/PeaceDiary-Prefix.pch";
+				INFOPLIST_FILE = "PeaceDiary/PeaceDiary-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C3DA75EB13C7E8ED00EEA31A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PeaceDiary/PeaceDiary-Prefix.pch";
+				INFOPLIST_FILE = "PeaceDiary/PeaceDiary-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3DA75C213C7E8ED00EEA31A /* Build configuration list for PBXProject "PeaceDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3DA75E713C7E8ED00EEA31A /* Debug */,
+				C3DA75E813C7E8ED00EEA31A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3DA75E913C7E8ED00EEA31A /* Build configuration list for PBXNativeTarget "PeaceDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3DA75EA13C7E8ED00EEA31A /* Debug */,
+				C3DA75EB13C7E8ED00EEA31A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3DA75BF13C7E8ED00EEA31A /* Project object */;
+}
