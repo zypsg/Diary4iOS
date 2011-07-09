@@ -2246,7 +2246,7 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>178</integer>
+					<integer>15</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -3053,7 +3053,7 @@
 			</dict>
 		</dict>
 		<string>file://localhost/Users/administrator/Documents/github/Diary4iOS/PeaceDiary/PeaceDiary.xcodeproj/</string>
-		<real>331903638.279073</real>
+		<real>331904252.04671001</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -3420,7 +3420,7 @@
 				</dict>
 			</array>
 		</dict>
-		<string>{{0, 0}, {1180, 407}}</string>
+		<string>{{0, 0}, {1180, 681}}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -4551,7 +4551,7 @@
 				</dict>
 			</array>
 		</dict>
-		<string>{{-134, -448}, {1440, 779}}</string>
+		<string>{{397, 99}, {1440, 779}}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -7601,7 +7601,7 @@
 				<integer>609</integer>
 			</dict>
 		</dict>
-		<real>331903638.27688098</real>
+		<real>331904252.04294598</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -12720,12 +12720,7 @@
 				<integer>39</integer>
 			</dict>
 			<key>NS.objects</key>
-			<array>
-				<dict>
-					<key>CF$UID</key>
-					<integer>3</integer>
-				</dict>
-			</array>
+			<array/>
 		</dict>
 		<dict>
 			<key>$class</key>
