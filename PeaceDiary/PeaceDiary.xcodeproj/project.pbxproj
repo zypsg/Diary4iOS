@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C344191113C879E1009CAFD8 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C344190F13C879E1009CAFD8 /* SFHFKeychainUtils.m */; };
+		C344191413C87C72009CAFD8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C344191313C87C72009CAFD8 /* Security.framework */; };
 		C39FF78D13C84F9900561EDD /* DiaryReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C39FF78C13C84F9900561EDD /* DiaryReadViewController.m */; };
 		C3D55D1213C7FC540032F53E /* WriteDiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D55D1113C7FC540032F53E /* WriteDiaryViewController.m */; };
 		C3D55D1413C802D00032F53E /* WriteDiaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3D55D1313C802D00032F53E /* WriteDiaryViewController.xib */; };
@@ -29,6 +31,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C344190F13C879E1009CAFD8 /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFHFKeychainUtils.m; path = util/SFHFKeychainUtils.m; sourceTree = "<group>"; };
+		C344191013C879E1009CAFD8 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFHFKeychainUtils.h; path = util/SFHFKeychainUtils.h; sourceTree = "<group>"; };
+		C344191313C87C72009CAFD8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		C39FF78B13C84F9900561EDD /* DiaryReadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiaryReadViewController.h; path = viewcontroller/DiaryReadViewController.h; sourceTree = "<group>"; };
 		C39FF78C13C84F9900561EDD /* DiaryReadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiaryReadViewController.m; path = viewcontroller/DiaryReadViewController.m; sourceTree = "<group>"; };
 		C3D55D1013C7FC540032F53E /* WriteDiaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WriteDiaryViewController.h; path = viewcontroller/WriteDiaryViewController.h; sourceTree = "<group>"; };
@@ -69,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C344191413C87C72009CAFD8 /* Security.framework in Frameworks */,
 				C3D55D2B13C82D7B0032F53E /* libsqlite3.dylib in Frameworks */,
 				C3DA75CD13C7E8ED00EEA31A /* UIKit.framework in Frameworks */,
 				C3DA75CF13C7E8ED00EEA31A /* Foundation.framework in Frameworks */,
@@ -108,6 +114,7 @@
 		C3DA75CB13C7E8ED00EEA31A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C344191313C87C72009CAFD8 /* Security.framework */,
 				C3D55D2A13C82D7B0032F53E /* libsqlite3.dylib */,
 				C3DA75CC13C7E8ED00EEA31A /* UIKit.framework */,
 				C3DA75CE13C7E8ED00EEA31A /* Foundation.framework */,
@@ -195,6 +202,8 @@
 		C3DA75F113C7EE3300EEA31A /* util */ = {
 			isa = PBXGroup;
 			children = (
+				C344190F13C879E1009CAFD8 /* SFHFKeychainUtils.m */,
+				C344191013C879E1009CAFD8 /* SFHFKeychainUtils.h */,
 				C3DA75F513C7EF8D00EEA31A /* Constants.h */,
 				C3D55D1513C811740032F53E /* UITool.h */,
 				C3D55D1613C811740032F53E /* UITool.m */,
@@ -278,6 +287,7 @@
 				C3D55D2913C825A70032F53E /* DateTool.m in Sources */,
 				C3D55D2E13C838B20032F53E /* DiaryListViewController.m in Sources */,
 				C39FF78D13C84F9900561EDD /* DiaryReadViewController.m in Sources */,
+				C344191113C879E1009CAFD8 /* SFHFKeychainUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
