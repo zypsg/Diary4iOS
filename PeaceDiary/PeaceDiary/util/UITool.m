@@ -13,7 +13,7 @@
 
 +(void) showAlertWithTitle:(NSString*)title withMsg:(NSString*) msg WithDelegate:(id)delegate
 {
-    UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:title message:msg  delegate:delegate cancelButtonTitle:@"确定"  otherButtonTitles: nil];
+    UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:title message:msg  delegate:delegate cancelButtonTitle:@"OK"  otherButtonTitles: nil];
     [alertView show];
     [alertView release];
 }
