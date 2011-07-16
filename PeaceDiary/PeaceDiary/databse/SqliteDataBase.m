@@ -58,9 +58,9 @@
                      diary.thirdThank,
                      diary.todayTitle,
                      diary.date];
-    NSLog(@"sql:%@",sql);
+//    NSLog(@"sql:%@",sql);
     int retCode = sqlite3_exec(_sqliteHandle, [sql UTF8String], NULL, NULL, &_errMsg);
-    NSLog(@"retCode:%d",retCode);
+//    NSLog(@"retCode:%d",retCode);
     return retCode == SQLITE_OK;
 }
 
@@ -84,11 +84,9 @@
             NSString* subject = [NSString stringWithUTF8String:(char*)sqlite3_column_text(statement,7)];
             NSTimeInterval time =  sqlite3_column_double(statement,8);
             
-            NSLog(@"timeStr:%f",time);
             DiaryModel* diary = [[DiaryModel alloc] initWithFirstThank:firstThank withSecondThank:secondThank withThird:thirdThank withFirstWrong:firstlesswell withSecondWrong:secondlesswell withThirdWrong:thirdlesswell withTitle:subject withDate:time];
             [ret addObject:diary];
             [diary release];
-            NSLog(@"diary:%@",diary);
 
         }
     }
