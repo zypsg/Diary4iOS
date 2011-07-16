@@ -31,7 +31,6 @@
     [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     timeString = [dateFormatter stringFromDate:date];
     [dateFormatter release];
-    NSLog(@"timeVal:%d,timeString:%@",timeVal,timeString);
     return timeString;
 }
 
