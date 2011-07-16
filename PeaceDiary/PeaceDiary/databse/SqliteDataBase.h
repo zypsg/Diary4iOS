@@ -30,4 +30,7 @@ enum
 - (NSArray*)getAllDiary;
 
 - (DiaryModel*) getTodayDiary;
+
+- (BOOL) updateTodayDiary:(DiaryModel*)diary;
+
 @end

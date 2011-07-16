@@ -29,6 +29,9 @@
 
 - (void)dealloc
 {
+    [diary release];
+    
+    
     [firstThankField release];
     [secondThankField release];
     [thirdThankField release];
@@ -81,7 +84,7 @@
      name:UIKeyboardWillHideNotification
      object:nil];
     
-    DiaryModel* diary = [DiaryModel getTodayDiary];
+    diary = [[DiaryModel getTodayDiary] retain];
     if(diary)
     {
         firstThankField.text = diary.firstThank;
@@ -93,6 +96,13 @@
         thirdWrongField.text = diary.thirdWrong;
         
         subjectField.text = diary.todayTitle;
+        
+        existTodayDiary = YES;
+    }
+    else
+    {
+        existTodayDiary = NO;
+        diary = [[DiaryModel alloc] init];
     }
 
     
@@ -162,10 +172,28 @@
     }
     
     
-    DiaryModel* diary = [[DiaryModel alloc] initWithFirstThank:firstThanks withSecondThank:secondThanks withThird:thirdThanks withFirstWrong:firstLesswell withSecondWrong:secondLessWell withThirdWrong:thirdLessWell withTitle:subject withDate:[[NSDate date] timeIntervalSince1970]];
-    BOOL ret  =[diary saveDiary];
-    if(ret)
+    diary.firstWrong = firstLesswell;
+    diary.secondWrong = secondLessWell;
+    diary.thirdWrong = thirdLessWell;
+    
+    diary.firstThank = firstThanks;
+    diary.secondThank = secondThanks;
+    diary.thirdThank = thirdThanks;
+    
+    diary.todayTitle = subject;
+    
+    diary.date = [[NSDate date] timeIntervalSince1970];
+    BOOL ret= NO;
+    if(existTodayDiary)
     {
+        ret = [diary updateTodayDiary];
+    }
+    else
+    {
+        ret =[diary saveDiary];
+    }
+    if(ret)
+    { 
         firstThankField.userInteractionEnabled = NO;
         secondThankField.userInteractionEnabled = NO;
         thirdThankField.userInteractionEnabled = NO;
@@ -176,7 +204,7 @@
         
         subjectField.userInteractionEnabled = NO;
     }
-    [diary release];
+   
 }
 
 #pragma mark-

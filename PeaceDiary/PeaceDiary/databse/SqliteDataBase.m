@@ -85,6 +85,7 @@
             NSTimeInterval time =  sqlite3_column_double(statement,8);
             
             DiaryModel* diary = [[DiaryModel alloc] initWithFirstThank:firstThank withSecondThank:secondThank withThird:thirdThank withFirstWrong:firstlesswell withSecondWrong:secondlesswell withThirdWrong:thirdlesswell withTitle:subject withDate:time];
+            diary.diaryID = sqlite3_column_int(statement,0);
             [ret addObject:diary];
             [diary release];
 
@@ -113,11 +114,30 @@
             NSTimeInterval time =  sqlite3_column_double(statement,8);
             
             ret = [[DiaryModel alloc] initWithFirstThank:firstThank withSecondThank:secondThank withThird:thirdThank withFirstWrong:firstlesswell withSecondWrong:secondlesswell withThirdWrong:thirdlesswell withTitle:subject withDate:time];
+            ret.diaryID = sqlite3_column_int(statement,0);
             [ret autorelease];
             
         }
     }
     return ret;
+}
+
+- (BOOL) updateTodayDiary:(DiaryModel*)diary
+{
+    NSString* sql = [NSString stringWithFormat:@"update DIARY set FIRSTLESSWELL='%@',SECONDLESSWELL='%@',THIRDLESSWELL='%@',FIRSTTHANK='%@',SECONDTHANK='%@',THIRDTHANK='%@',SUBJECT='%@',time=%f where ID=%d", 
+                     diary.firstWrong,
+                     diary.secondWrong,
+                     diary.thirdWrong,
+                     diary.firstThank,
+                     diary.secondThank,
+                     diary.thirdThank,
+                     diary.todayTitle,
+                     diary.date,
+                     diary.diaryID];
+//    NSLog(@"sql:%@",sql);
+    int retCode = sqlite3_exec(_sqliteHandle, [sql UTF8String], NULL, NULL, &_errMsg);
+//    NSLog(@"retCode:%d",retCode);
+    return retCode == SQLITE_OK;
 }
 
 - (void) closeDB

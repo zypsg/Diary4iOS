@@ -19,6 +19,10 @@
     UITextField* thirdWrongField;
     
     UITextField* subjectField;
+    
+    BOOL existTodayDiary;
+    
+    DiaryModel* diary;
 }
 
 @property (nonatomic, retain) IBOutlet UITextField* firstThankField;

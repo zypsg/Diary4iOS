@@ -18,6 +18,7 @@
 @synthesize todayTitle= _todayTitle;
 @synthesize date = _date;
 @synthesize modelVersion;
+@synthesize diaryID;
 
 
 
@@ -61,6 +62,28 @@
         if(!ret)
         {
             [UITool showAlertWithTitle:@"发生异常" withMsg:@"保存日记失败!" WithDelegate:nil];
+        }
+    }
+    else
+    {
+        [UITool showAlertWithTitle:@"发生异常" withMsg:@"打开sqlite数据库失败!" WithDelegate:nil];
+    }
+    [db closeDB];
+    [db release];
+    return ret;
+}
+
+- (BOOL) updateTodayDiary
+{
+    BOOL ret = NO;
+    SqliteDataBase* db = [[SqliteDataBase alloc] init];
+    ret = [db initDB];
+    if(ret)
+    {
+        ret = [db updateTodayDiary:self];
+        if(!ret)
+        {
+            [UITool showAlertWithTitle:@"发生异常" withMsg:@"更新日记失败!" WithDelegate:nil];
         }
     }
     else
