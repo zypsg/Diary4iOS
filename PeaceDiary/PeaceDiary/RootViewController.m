@@ -158,6 +158,7 @@
     {
        
         NSArray* diarys = [DiaryModel getDiaryModelFromDB];
+        NSLog(@"diarys:%@",diarys);
         DiaryListViewController* list = [[DiaryListViewController alloc] initWithDiaryArray:diarys];
         [self.navigationController pushViewController:list animated:YES];
         [list release];
