@@ -10,6 +10,9 @@
 
 
 @interface DiaryModel : NSObject {
+    
+    NSUInteger diaryID;
+    
     NSString* _firstWrong;
     NSString* _secondWrong;
     NSString* _thirdWrong;
@@ -23,6 +26,8 @@
     NSTimeInterval _date;  
     CGFloat modelVersion;
 }
+@property (nonatomic,assign) NSUInteger diaryID;
+
 @property (nonatomic, retain) NSString* firstWrong;
 @property (nonatomic, retain) NSString* secondWrong;
 @property (nonatomic, retain) NSString* thirdWrong;
@@ -43,6 +48,8 @@
 - (id) initWithFilePath:(NSString*)diaryPath;
 
 - (BOOL) saveDiary;
+
+- (BOOL) updateTodayDiary;
 
 - (NSString*) getDateStr;
 
