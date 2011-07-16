@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C323F3F213D11FBD00133227 /* IOSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C323F3F113D11FBD00133227 /* IOSUtil.m */; };
+		C323F3F713D129FD00133227 /* DataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C323F3F613D129FD00133227 /* DataTool.m */; };
 		C344191113C879E1009CAFD8 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C344190F13C879E1009CAFD8 /* SFHFKeychainUtils.m */; };
 		C344191413C87C72009CAFD8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C344191313C87C72009CAFD8 /* Security.framework */; };
 		C39FF78D13C84F9900561EDD /* DiaryReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C39FF78C13C84F9900561EDD /* DiaryReadViewController.m */; };
@@ -31,6 +33,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C323F3F013D11FBD00133227 /* IOSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IOSUtil.h; path = util/IOSUtil.h; sourceTree = "<group>"; };
+		C323F3F113D11FBD00133227 /* IOSUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IOSUtil.m; path = util/IOSUtil.m; sourceTree = "<group>"; };
+		C323F3F413D122E200133227 /* DiaryConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiaryConstant.h; path = util/DiaryConstant.h; sourceTree = "<group>"; };
+		C323F3F513D129FD00133227 /* DataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataTool.h; path = util/DataTool.h; sourceTree = "<group>"; };
+		C323F3F613D129FD00133227 /* DataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataTool.m; path = util/DataTool.m; sourceTree = "<group>"; };
 		C344190F13C879E1009CAFD8 /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFHFKeychainUtils.m; path = util/SFHFKeychainUtils.m; sourceTree = "<group>"; };
 		C344191013C879E1009CAFD8 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFHFKeychainUtils.h; path = util/SFHFKeychainUtils.h; sourceTree = "<group>"; };
 		C344191313C87C72009CAFD8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -211,6 +218,11 @@
 				C3D55D1A13C820A20032F53E /* FileTool.m */,
 				C3D55D2713C825A70032F53E /* DateTool.h */,
 				C3D55D2813C825A70032F53E /* DateTool.m */,
+				C323F3F013D11FBD00133227 /* IOSUtil.h */,
+				C323F3F113D11FBD00133227 /* IOSUtil.m */,
+				C323F3F413D122E200133227 /* DiaryConstant.h */,
+				C323F3F513D129FD00133227 /* DataTool.h */,
+				C323F3F613D129FD00133227 /* DataTool.m */,
 			);
 			name = util;
 			sourceTree = "<group>";
@@ -288,6 +300,8 @@
 				C3D55D2E13C838B20032F53E /* DiaryListViewController.m in Sources */,
 				C39FF78D13C84F9900561EDD /* DiaryReadViewController.m in Sources */,
 				C344191113C879E1009CAFD8 /* SFHFKeychainUtils.m in Sources */,
+				C323F3F213D11FBD00133227 /* IOSUtil.m in Sources */,
+				C323F3F713D129FD00133227 /* DataTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
