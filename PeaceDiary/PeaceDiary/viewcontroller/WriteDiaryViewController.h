@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "DiaryModel.h"
 
 @interface WriteDiaryViewController : UIViewController <UITextFieldDelegate>{
     UITextField* firstThankField;

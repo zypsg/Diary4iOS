@@ -8,7 +8,7 @@
 
 #import "WriteDiaryViewController.h"
 #import "UITool.h"
-#import "DiaryModel.h"
+
 
 
 @implementation WriteDiaryViewController
@@ -80,6 +80,21 @@
      selector:@selector(keyboardWillHide:)
      name:UIKeyboardWillHideNotification
      object:nil];
+    
+    DiaryModel* diary = [DiaryModel getTodayDiary];
+    if(diary)
+    {
+        firstThankField.text = diary.firstThank;
+        secondThankField.text = diary.secondThank;
+        thirdThankField.text = diary.thirdThank;
+        
+        firstWrongField.text = diary.firstWrong;
+        secondWrongField.text = diary.secondWrong;
+        thirdWrongField.text = diary.thirdWrong;
+        
+        subjectField.text = diary.todayTitle;
+    }
+
     
 }
 

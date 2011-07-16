@@ -52,7 +52,6 @@
 
 - (BOOL) saveDiary
 {
-    NSLog(@"%@",self);
     BOOL ret = NO;
     SqliteDataBase* db = [[SqliteDataBase alloc] init];
     ret = [db initDB];
@@ -111,5 +110,19 @@
     
     
     [super dealloc];
+}
+
++ (DiaryModel*) getTodayDiary
+{
+    DiaryModel* model = nil;
+    SqliteDataBase* db = [[SqliteDataBase alloc] init];
+    BOOL ret = [db initDB];
+    if(ret)
+    {
+        model = [db getTodayDiary];
+    }
+    [db closeDB];
+    [db release];
+    return model;
 }
 @end

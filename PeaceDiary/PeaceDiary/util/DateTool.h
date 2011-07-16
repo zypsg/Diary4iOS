@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#define  kSecondInDay 86400
 
 @interface DateTool : NSObject {
     
@@ -17,4 +17,7 @@
 
 + (NSString*) getTimeStringFromValue:(int) timeVal;
 
++ (NSDate *) dateAtStartOfToDay;
+
++ (NSTimeInterval) timeIntervalStartOfToDay;
 @end

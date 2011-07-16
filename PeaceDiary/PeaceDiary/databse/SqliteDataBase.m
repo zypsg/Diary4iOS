@@ -7,7 +7,7 @@
 //
 
 #import "SqliteDataBase.h"
-
+#import "DateTool.h"
 
 @implementation SqliteDataBase
 
@@ -88,6 +88,33 @@
             [ret addObject:diary];
             [diary release];
 
+        }
+    }
+    return ret;
+}
+
+- (DiaryModel*) getTodayDiary
+{
+    DiaryModel* ret = nil;
+    NSString* sql = [NSString stringWithFormat:@"select * from DIARY where time between %f and %f ",[DateTool timeIntervalStartOfToDay],kSecondInDay+[DateTool timeIntervalStartOfToDay]];
+    sqlite3_stmt *statement;
+    
+    if (sqlite3_prepare_v2(_sqliteHandle, [sql UTF8String], -1, &statement, nil) == SQLITE_OK) {
+        
+        while (sqlite3_step(statement) == SQLITE_ROW) {
+            
+            NSString* firstlesswell = [NSString stringWithUTF8String:(char*)sqlite3_column_text(statement,1)];
+            NSString* secondlesswell = [NSString stringWithUTF8String:(char*)sqlite3_column_text(statement,2)];
+            NSString* thirdlesswell = [NSString stringWithUTF8String:(char*)sqlite3_column_text(statement,3)];
+            NSString* firstThank = [NSString stringWithUTF8String:(char*)sqlite3_column_text(statement,4)];
+            NSString* secondThank = [NSString stringWithUTF8String:(char*)sqlite3_column_text(statement,5)];
+            NSString* thirdThank = [NSString stringWithUTF8String:(char*)sqlite3_column_text(statement,6)];
+            NSString* subject = [NSString stringWithUTF8String:(char*)sqlite3_column_text(statement,7)];
+            NSTimeInterval time =  sqlite3_column_double(statement,8);
+            
+            ret = [[DiaryModel alloc] initWithFirstThank:firstThank withSecondThank:secondThank withThird:thirdThank withFirstWrong:firstlesswell withSecondWrong:secondlesswell withThirdWrong:thirdlesswell withTitle:subject withDate:time];
+            [ret autorelease];
+            
         }
     }
     return ret;

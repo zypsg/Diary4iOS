@@ -48,6 +48,7 @@
 
 + (NSArray*)getDiaryModelFromDB;
 
++ (DiaryModel*) getTodayDiary;
 
 
 @end

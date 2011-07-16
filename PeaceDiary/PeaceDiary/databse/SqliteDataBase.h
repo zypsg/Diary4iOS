@@ -28,4 +28,6 @@ enum
 - (BOOL) insertDiary:(DiaryModel*)diary;
 
 - (NSArray*)getAllDiary;
+
+- (DiaryModel*) getTodayDiary;
 @end

@@ -34,4 +34,18 @@
     return timeString;
 }
 
++ (NSDate *) dateAtStartOfToDay
+{
+	NSDateComponents *components = [[NSCalendar currentCalendar] components:(NSYearCalendarUnit| NSMonthCalendarUnit | NSDayCalendarUnit | NSWeekCalendarUnit |  NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit | NSWeekdayCalendarUnit | NSWeekdayOrdinalCalendarUnit) fromDate:[NSDate date]];
+	[components setHour:0];
+	[components setMinute:0];
+	[components setSecond:0];
+	return [[NSCalendar currentCalendar] dateFromComponents:components];
+}
+
++ (NSTimeInterval) timeIntervalStartOfToDay
+{
+    NSTimeInterval time = [[DateTool dateAtStartOfToDay] timeIntervalSince1970];
+    return time;
+}
 @end
