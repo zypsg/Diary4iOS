@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RootViewController : UITableViewController {
+@interface RootViewController : UITableViewController <UITextFieldDelegate>{
 
 }
 
@@ -16,4 +16,8 @@
 - (void) setDiaryPwd:(id)sender;
 
 - (void) dismissPwd:(id)sender;
+
+- (void) showRequirePwdView;
+
+- (void) showAlertWithTextFieldWithTitle:(NSString*)title;
 @end
