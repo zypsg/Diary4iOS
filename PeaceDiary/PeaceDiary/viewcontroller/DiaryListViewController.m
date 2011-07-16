@@ -8,6 +8,7 @@
 
 #import "DiaryListViewController.h"
 #import "DiaryModel.h"
+#import "DiaryReadViewController.h"
 
 @implementation DiaryListViewController
 @synthesize diaryArray;
@@ -174,6 +175,10 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
      */
+    DiaryModel* model = [diaryArray objectAtIndex:indexPath.row];
+    DiaryReadViewController* drvc = [[DiaryReadViewController alloc]initWithDiary:model];
+    [self.navigationController pushViewController:drvc animated:YES];
+    [drvc release];
 }
 
 @end

@@ -54,6 +54,7 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.title = [diary getDateStr];
 }
 
 - (void)viewDidUnload
@@ -94,13 +95,25 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
  
-    return 2;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
- 
-    return 3;
+    NSUInteger ret = 0;
+    if(section == 0)
+    {
+        ret = 1;
+    }
+    else if(section == 1)
+    {
+        ret = 3;
+    }
+    else if(section == 2)
+    {
+        ret = 3;
+    }
+    return ret;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -113,8 +126,64 @@
     }
     
     // Configure the cell...
-    
+    if(indexPath.section==0)
+    {
+        cell.textLabel.text=diary.todayTitle;
+    }
+    else if(indexPath.section == 1)
+    {
+        switch (indexPath.row) {
+            case 0:
+                cell.textLabel.text = diary.firstWrong;
+                break;
+            case 1:
+                cell.textLabel.text = diary.secondWrong;
+                break;
+            case 2:
+                cell.textLabel.text = diary.thirdWrong;
+                break;
+            default:
+                break;
+        }
+    }
+    else if(indexPath.section == 2)
+    {
+        switch (indexPath.row) {
+            case 0:
+                cell.textLabel.text = diary.thirdThank;
+                break;
+            case 1:
+                cell.textLabel.text = diary.secondThank;
+                break;
+            case 2:
+                cell.textLabel.text = diary.thirdThank;
+                break;
+            default:
+                break;
+        }
+    }
+    cell.textLabel.lineBreakMode = UILineBreakModeWordWrap;
+    cell.textLabel.numberOfLines = 0;
+    [cell.textLabel sizeToFit];
     return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    NSString* ret = nil;
+    if(section == 0)
+    {
+        ret = @"Subject";
+    }
+    else if(section == 1)
+    {
+        ret = @"Lesswell";
+    }
+    else if(section == 2)
+    {
+        ret = @"Well";
+    }
+    return ret;
 }
 
 /*
